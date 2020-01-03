@@ -74,6 +74,7 @@ $(document).ready(function () {
     $('.audio').click(function (e) {
         if (money >= 100) {
             money -= 100;
+            updateMoney(money);
             defaultMusic = false;
             if (songIndex > 1) {
                 control.pause();

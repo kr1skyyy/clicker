@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var money = 9999999;
+    var money = 0;
     var i = 0; //clickArr upgrade tracker
     var j = 0; //perSecArr upgrade tracker
     var audioURL = "sounds/button/";

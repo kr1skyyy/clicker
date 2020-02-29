@@ -10,14 +10,14 @@ $(document).ready(function () {
     var clickArr = [
         [0, 150],
         [1, 700],
-        [2, 15000],
+        [2, 7500],
         [5, 0],
         ["maxed out", 0]
     ];
     var perSecArr = [
         [0, 100],
         [1, 1500],
-        [5, 20000],
+        [5, 10000],
         [15, 0],
         ["maxed out", 0]
     ];

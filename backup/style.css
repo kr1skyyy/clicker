@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wrapper {
+    margin: 0 10%;
+}
+
+.game-window {
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-window h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    
+
+}
+
+.upgrades-menu {
+    display: none;
+text-align: center;
+    border: 3px solid #999;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+
+.upgrades-menu .shop {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.upgrades-menu .shop h1 {
+    font-size: 14pt;
+}
+.getMoney{
+    padding-top: 20px;
+    height: 60px;
+}
+
+.upgrade{
+    margin-bottom: 20px;
+}
+
+.score{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.error{
+    display:none;
+    margin-bottom: 20px;
+}
+
+
+
+.hidden{
+    display:none;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Idle game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="gameLogic.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="game-window">
+            <div class="score">
+                <h1 class="bonusPerClick ">Per Click: 0$</h1>
+                <h1 class="money ">Money: 0$</h1>
+                <h1 class="perSec ">Per Second: 0$</h1>
+            </div>
+            <img id="spark" alt="spark" src="spark.png" width="250" height="250" class="hidden"/>
+            <button class="getMoney btn btn-outline-info btn-lg btn-block">Click Me</button>
+            <button class="upgrade btn btn-outline-warning btn-lg btn-block">Upgrade</button>
+        </div>
+        <div class="upgrades-menu btn btn-secondary btn-lg btn-block" style="display:none;">
+            <div class="shop">
+                <h1 class="perSecond">Upgrade Per Second => 100$ for +1</h1>
+                <h1 class="perClick">Upgrade Per Click => 150$ for +1</h1>
+                <h1 class="audio">Buy a new random song => 100$</h1>
+            </div>
+        </div>
+        
+        <div class="error btn btn-primary btn-lg btn-block hidden" style="display:none;">
+            <h1>You do not have enough money to buy this upgrade!</h1>
+        </div>
+        <div class="disable-audio">
+            <h1 class="disable btn btn-outline-info btn-lg btn-block">Enable/Disable sound effects</h1>
+        </div>
+    </div>
+    
+</body>
+
+</html>
